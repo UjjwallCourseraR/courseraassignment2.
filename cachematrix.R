@@ -15,6 +15,7 @@ getsd <- function() s
 list(set = set, get = get,setsd = setsd,getsd = getsd)
 
 #cache the inverse of a matrix function project 2
+#does this by setting and getting the values of the matrix and the inverse.
 
 
 
@@ -35,6 +36,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, setinv = setinv, getinv = getinv)
   
 }
+#This function below computes inverse of the matrix returned.
 cachesolve <- function(x, ...) { 
   i<- x$getinv()
   if(!is.null(u)) {
